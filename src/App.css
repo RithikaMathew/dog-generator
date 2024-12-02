@@ -1,0 +1,144 @@
+body {
+  overflow-x: hidden;
+}
+
+#root {
+
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.271), rgba(0, 0, 0, 0.5)),
+    url("./assets/dog.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+img {
+  height: 200px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+h1 {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 60px;
+}
+
+h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+}
+
+p {
+  margin-top: 7px;
+  margin-bottom: 7px;
+}
+
+.app>* {
+  /* will select all direct children of the element with the class app, regardless of what type of elements they are */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  text-align: center;
+}
+
+.known-dogs {
+  width: 25%;
+  height: 70%;
+  background-color: rgba(245, 245, 220, 0.856);
+  overflow-y: auto;
+  color: #000;
+}
+
+.known-dogs img {
+  height: 100px;
+  width: 100px;
+}
+
+.current-dog {
+  width: 60%;
+  height: auto;
+  background-color: rgba(245, 245, 220, 0.874);
+  border-radius: 20px;
+}
+
+.current-dog-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+button {
+  border-radius: 10px;
+  font-size: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 13px;
+  padding-right: 13px;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.dog-attributes button {
+  background-color: rgb(250, 237, 118);
+  filter: drop-shadow(0px 5px 0px rgb(255, 221, 1));
+
+}
+
+.banlist button:hover {
+  background-color: rgb(164, 255, 154);
+  filter: drop-shadow(0px 5px 0px rgb(13, 227, 2));
+
+}
+
+.dog-attributes button:hover,
+.banlist button {
+  background-color: rgb(246, 158, 158);
+  filter: drop-shadow(0px 5px 0px rgb(192, 95, 95));
+}
+
+.banlist button {
+  background-color: rgb(254, 199, 199);
+}
+
+.banlist {
+  height: 100vh;
+  width: 25%;
+  background-color: beige;
+  margin-left: auto;
+  overflow: auto;
+}
+
+.current-dog img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.discover {
+  background-color: rgb(255, 174, 0);
+  filter: drop-shadow(0px 5px 0px rgb(189, 129, 0));
+  display: block;
+  /* Added to make the button a block element */
+  margin: 20px auto;
+}
+
+.discover:hover {
+  background-color: rgb(255, 136, 0);
+  filter: drop-shadow(0px 5px 0px rgb(177, 104, 0));
+}
